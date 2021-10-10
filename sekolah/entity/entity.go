@@ -1,5 +1,5 @@
 package entity
 
-type EntityBiayaPendidikan struct {
+type EntitySekolah struct {
 	UangPengembangan, UangSpp, UangKegiatan, UangRaport, SubTotal uint64
 }

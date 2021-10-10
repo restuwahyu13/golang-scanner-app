@@ -38,14 +38,14 @@ func Screen() {
 
 func Input() {
 
-	input := schema.SchemaBiayaPendidikan{
+	input := schema.SchemaSekolah{
 		UangPengembangan: 3000000,
 		UangSpp:          1200000,
 		UangKegiatan:     3500000,
 		UangRaport:       500000,
 	}
 
-	data := repository.NewBiayaPendidikan(&input)
+	data := repository.NewSekolah(&input)
 
 	pegembangan := bufio.NewScanner(os.Stdin)
 	spp := bufio.NewScanner(os.Stdin)
@@ -74,7 +74,7 @@ func Input() {
 	Choice(pegembanganOutput, sppOuput, kegiatanOutput, raportOuput, data)
 }
 
-func Choice(pengembanganChoice uint64, sppChoice uint64, kegiatanChoice uint64, raportChoice uint64, data *entity.EntityBiayaPendidikan) {
+func Choice(pengembanganChoice uint64, sppChoice uint64, kegiatanChoice uint64, raportChoice uint64, data *entity.EntitySekolah) {
 	if pengembanganChoice == 1 && sppChoice == 1 && kegiatanChoice == 1 && raportChoice == 1 {
 
 		fmt.Println("Terimakasih Telah Melunasi Semua Pembayaran")

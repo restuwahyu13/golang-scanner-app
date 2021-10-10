@@ -1,5 +1,5 @@
 package schema
 
-type SchemaBiayaPendidikan struct {
+type SchemaSekolah struct {
 	UangPengembangan, UangSpp, UangKegiatan, UangRaport, SubTotal uint64
 }

@@ -6,15 +6,15 @@ import (
 )
 
 type Biaya interface {
-	BiayaPendidikan(input *schema.SchemaBiayaPendidikan) *entity.EntityBiayaPendidikan
+	BiayaSekolah(input *schema.SchemaSekolah) *entity.EntitySekolah
 }
 
-type BiayaPendidikan struct {
+type BiayaSekolah struct {
 	biaya Biaya
 }
 
-func (s *BiayaPendidikan) BiayaPendidikan(input *schema.SchemaBiayaPendidikan) *entity.EntityBiayaPendidikan {
-	var entity entity.EntityBiayaPendidikan
+func (s *BiayaSekolah) BiayaSekolah(input *schema.SchemaSekolah) *entity.EntitySekolah {
+	var entity entity.EntitySekolah
 	entity.UangPengembangan = input.UangPengembangan
 	entity.UangSpp = input.UangSpp
 	entity.UangRaport = input.UangRaport
@@ -23,7 +23,7 @@ func (s *BiayaPendidikan) BiayaPendidikan(input *schema.SchemaBiayaPendidikan) *
 	return &entity
 }
 
-func NewBiayaPendidikan(input *schema.SchemaBiayaPendidikan) *entity.EntityBiayaPendidikan {
-	var biaya BiayaPendidikan
-	return biaya.BiayaPendidikan(input)
+func NewSekolah(input *schema.SchemaSekolah) *entity.EntitySekolah {
+	var biaya BiayaSekolah
+	return biaya.BiayaSekolah(input)
 }
