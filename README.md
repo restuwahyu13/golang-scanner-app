@@ -1,6 +1,6 @@
 # Golang Scanner
 
-Contoh pembuatan aplikasi Java menggunakan BlueJ [cek disini](https://github.com/restuwahyu13/java-with-bluej), tetapi berikut ini adalah version rebuild dari Java ke Golang, dengan menggunakan konsep yang sama yaitu dengan menggunakan Scanner.
+Contoh pembuatan aplikasi Java menggunakan BlueJ [cek disini](https://github.com/restuwahyu13/java-with-bluej), tetapi berikut ini adalah versi rebuild dari Java ke Golang, dengan menggunakan konsep yang sama yaitu dengan menggunakan Scanner.
 
 ## Command
 
