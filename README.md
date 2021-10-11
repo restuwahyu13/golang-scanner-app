@@ -14,7 +14,7 @@ $ make start name=f<app name> || go run <app name>/main.go
 - Ticket
 - Sekolah
 
-## Ticket App Scanner
+## Toko App Scanner
 
 <img src="./images/toko.png"/>
 
