@@ -18,7 +18,7 @@ func (r *BiayaToko) BiayaToko(input *schema.SchemaToko) *entity.EntityToko {
 
 	toko.Modal = input.Modal + input.TotalPenjualan
 	toko.Keuntungan = (input.Jual - input.Modal) * input.TotalPenjualan
-	toko.TotalPenjualan = input.FirstWeek + input.LastWeek
+	toko.TotalPenjualan = input.TotalPenjualan
 
 	return &toko
 }
