@@ -64,10 +64,10 @@ func Input() {
 	fmt.Printf("[Raport] - pilih 1 jika ya, pilih 2 jika tidak: ")
 	raport.Scan()
 
-	pegembanganOutput, _ := strconv.ParseUint(pegembangan.Text(), 8, 64)
-	sppOuput, _ := strconv.ParseUint(spp.Text(), 8, 64)
-	kegiatanOutput, _ := strconv.ParseUint(kegiatan.Text(), 8, 64)
-	raportOuput, _ := strconv.ParseUint(raport.Text(), 8, 64)
+	pegembanganOutput, _ := strconv.ParseUint(pegembangan.Text(), 10, 64)
+	sppOuput, _ := strconv.ParseUint(spp.Text(), 10, 64)
+	kegiatanOutput, _ := strconv.ParseUint(kegiatan.Text(), 10, 64)
+	raportOuput, _ := strconv.ParseUint(raport.Text(), 10, 64)
 
 	fmt.Printf("\n")
 

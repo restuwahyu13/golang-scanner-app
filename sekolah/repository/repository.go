@@ -15,6 +15,7 @@ type BiayaSekolah struct {
 
 func (s *BiayaSekolah) BiayaSekolah(input *schema.SchemaSekolah) *entity.EntitySekolah {
 	var entity entity.EntitySekolah
+
 	entity.UangPengembangan = input.UangPengembangan
 	entity.UangSpp = input.UangSpp
 	entity.UangRaport = input.UangRaport

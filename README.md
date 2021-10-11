@@ -10,14 +10,18 @@ $ make start name=f<app name> || go run <app name>/main.go
 
 ## Implementation Case
 
-- Toko (Besok Ya)
+- Toko
 - Ticket
 - Sekolah
 
 ## Ticket App Scanner
 
-<img src="./images/ticket.png">
+<img src="./images/toko.png"/>
+
+## Ticket App Scanner
+
+<img src="./images/ticket.png"/>
 
 ## Sekolah App Scanner
 
-<img src="./images/ticket.png">
+<img src="./images/ticket.png"/>
