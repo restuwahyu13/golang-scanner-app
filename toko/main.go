@@ -13,7 +13,21 @@ import (
 
 func main() {
 	Screen()
+	Input()
+}
 
+func Screen() {
+	cmd := exec.Command("clear")
+	cmd.Stdout = os.Stdout
+	cmd.Run()
+
+	fmt.Println("=============== PERHITUNGAN =================")
+	fmt.Println("Penjualan Baju Gamis (Selama Ramadhan 1442 H)")
+	fmt.Println("=============== GAMIS FASHION ===============")
+	fmt.Printf("\n")
+}
+
+func Input() {
 	firstweek := bufio.NewScanner(os.Stdin)
 	lastweek := bufio.NewScanner(os.Stdin)
 
@@ -34,17 +48,6 @@ func main() {
 	input.Keuntungan = 70000
 
 	Choice(&input)
-}
-
-func Screen() {
-	cmd := exec.Command("clear")
-	cmd.Stdout = os.Stdout
-	cmd.Run()
-
-	fmt.Println("=============== PERHITUNGAN =================")
-	fmt.Println("Penjualan Baju Gamis (Selama Ramadhan 1442 H)")
-	fmt.Println("=============== GAMIS FASHION ===============")
-	fmt.Printf("\n")
 }
 
 func Choice(input *schema.SchemaToko) {
