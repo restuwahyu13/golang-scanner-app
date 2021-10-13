@@ -13,6 +13,7 @@ $ make start name=f<app name> || go run <app name>/main.go
 - Toko
 - Ticket
 - Sekolah
+- Pinjol (Pinjaman Online)
 
 ## Toko App Scanner
 
@@ -25,3 +26,9 @@ $ make start name=f<app name> || go run <app name>/main.go
 ## Sekolah App Scanner
 
 <img src="./images/ticket.png"/>
+
+## Pinjol App Scanner
+
+<img src="./images/pinjol-1.png"/>
+
+<img src="./images/pinjol-2.png"/>
