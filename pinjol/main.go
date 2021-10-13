@@ -140,6 +140,12 @@ func Choice(data uint64) {
 		log.Fatal(err)
 	}
 
+	if pinjamanOuput > data {
+		fmt.Printf("\n")
+		fmt.Printf("Jumlah pinjaman %d tidak boleh melebihi limit pinjaman %d", pinjamanOuput, data)
+		os.Exit(0)
+	}
+
 	if pinjamanOuput < 50000 {
 		fmt.Printf("\n")
 		fmt.Println("Minimal pinjaman diatas Rp 50.000")
